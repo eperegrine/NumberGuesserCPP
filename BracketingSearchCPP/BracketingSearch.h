@@ -6,8 +6,9 @@ public:
 	BracketingSearch(int);
 	~BracketingSearch();
 	static int GetNumber();
-	bool isNumber(int);
+	bool GuessNumber(int);
 private:
 	int numToGuess;
+	int currentGuesses;
 };
 

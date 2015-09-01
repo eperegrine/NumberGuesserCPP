@@ -26,3 +26,9 @@ int BracketingSearch::GetNumber() {
 	} while (!(number >= 0 && number <= 100));
 	return 0;
 }
+
+bool BracketingSearch::GuessNumber(int num) 
+{
+	currentGuesses++;
+	return num == this->numToGuess;
+}
